@@ -1,7 +1,7 @@
 import csv
 
 def file_write(header_row):
-    with open("testing1.csv", "w") as csvfile:
+    with open(input("Enter the name of the file you want to create and set it to .csv\n"), "w") as csvfile:
         ex_write = csv.writer(csvfile)
         ex_write.writerow(header_row)
 
@@ -15,4 +15,8 @@ def file_write(header_row):
             else:
                 print("Invalid entry. Try entering " + len(header_row) + " columns instead of " + len(row) + " columns.")
 
-    print("wrote_to_file")
+def add_person(newrow):
+    with open("testing1.csv", "a", newline="") as adder:
+        exwrite = csv.writer(adder)
+        exwrite.writerow(newrow)
+        adder.close
