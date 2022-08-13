@@ -2,6 +2,7 @@ import argparse
 import writer
 import reader
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t","--header-row", nargs="+", default= [])
@@ -23,10 +24,6 @@ def main():
             break
         else:
             print("Invalid option try again")
-
-    
-    
-
 
 
 if __name__ == "__main__":
