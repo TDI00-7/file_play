@@ -1,13 +1,7 @@
-import argparse
 import writer
 import reader
 
-
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-t","--header-row", nargs="+", default= [])
-    args = parser.parse_args()
-    
     while True:
         user_choice = input("\nWhat you want:\n(1)Create CSV\n(2)Read CSV\n(3)Add Row to CSV\n(4)Modify row in CSV\n(5)Edit Cell in csv file\n(6)Exit\n")
         if user_choice == "1":
